@@ -30,10 +30,10 @@ $(call inherit-product, device/samsung/star2lte/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Inherit some common AOSP stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := lineage_star2lte
+PRODUCT_NAME := aosp_star2lte
 PRODUCT_DEVICE := star2lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G965F
