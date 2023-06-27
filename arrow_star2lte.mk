@@ -24,16 +24,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 # Inherit from star2lte device
 $(call inherit-product, device/samsung/star2lte/device.mk)
 
+DEVICE_MAINTAINER := PawiX25
+
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2960
 TARGET_SCREEN_WIDTH := 1440
 TARGET_BOOT_ANIMATION_RES := 1440
 
 ## Inherit some common AOSP stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := aosp_star2lte
+PRODUCT_NAME := arrow_star2lte
 PRODUCT_DEVICE := star2lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G965F
